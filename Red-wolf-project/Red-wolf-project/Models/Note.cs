@@ -14,11 +14,9 @@ namespace Red_wolf_project.Models
         [Required]
         public string Title { get; set; }
 
+        [Display(Name = "Note")]
+        [DataType(DataType.MultilineText)]
         public string NoteBody { get; set; }
 
-        [Required]
-        public DateTime CreatedTimeStamp { get; set; }
-
-        public DateTime EditTimeStamp { get; set; }
     }
 }
