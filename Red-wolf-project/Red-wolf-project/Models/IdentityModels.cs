@@ -29,5 +29,7 @@ namespace Red_wolf_project.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Red_wolf_project.Models.Note> Notes { get; set; }
     }
 }

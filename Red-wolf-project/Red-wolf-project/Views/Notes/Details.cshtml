@@ -1,0 +1,50 @@
+﻿@model Red_wolf_project.Models.Note
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Note</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoteBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoteBody)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedTimeStamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedTimeStamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EditTimeStamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EditTimeStamp)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NoteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
